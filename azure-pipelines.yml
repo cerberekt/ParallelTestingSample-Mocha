@@ -10,7 +10,8 @@ jobs:
     parallel: 3
 
   steps:
-  - script: 'npm install && npm install -g mocha' 
+  
+  - script: 'npm install && npm install mocha' 
     displayName: 'Command Line Script'
 
   - bash: . 'distribute_tests.sh'
